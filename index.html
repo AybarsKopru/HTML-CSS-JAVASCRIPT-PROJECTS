@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Holiday Suites - Bozburun</title>
+    <link rel="icon" type="image/avif" href="logo.avif">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <img src="logo.avif" alt="Four Holiday Logo">
+                    <span class="logo-text">Four Holiday Suites</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="yemeden-donme.html" class="nav-link">4 Yemeden Dönme</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gezmeden-donme.html" class="nav-link">4 Gezmeden Dönme</a>
+                </li>
+                <li class="nav-item">
+                    <a href="yapmadan-donme.html" class="nav-link">4 Yapmadan Dönme</a>
+                </li>
+                <li class="nav-item">
+                    <a href="iletisim.html" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+            <div class="nav-booking">
+                <button class="booking-btn">Rezervasyon</button>
+                <div class="phone-number">+90 544 124 48 44</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Four Holiday Suites WE Room">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Four Holiday Suites</h1>
+                <h2>Bozburun</h2>
+                <p>Bozburun yat limanının hemen üzerinde bulunan tatil evlerimiz, dört adet bir yatak odası ve bir salonu olan denize sıfır, panoramik deniz manzaralı, merkezi ve şık döşenmiş evlerden oluşuyor.</p>
+                <button class="cta-btn">Hemen Rezervasyon Yap</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms">
+        <div class="container">
+            <h2 class="section-title">Odalarımız</h2>
+            <div class="rooms-grid">
+                <!-- Room 1 - WE -->
+                <div class="room-card" onclick="openRoomModal('we')">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="WE Suite">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">WE</h3>
+                        <p class="room-description">Bozburun'da rahat ve konforlu bir kiralık yazlık arayan tatilciler için hazırladığımız, bu evimiz binamızın ikinci katında bulunur. Yatak odasında bir adet 160X200 çift kişilik yatak, salonun da bir adet açılır yatak olabilir kanepesi vardır. Amerikan mutfaklı, geniş balkonlu, deniz manzaralı, ferah döşenmiş bir evdir.</p>
+                        <button class="room-booking-btn">Rezervasyon Yap</button>
+                    </div>
+                </div>
+
+                <!-- Room 2 - WILL -->
+                <div class="room-card" onclick="openRoomModal('will')">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="WILL Suite">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">WILL</h3>
+                        <p class="room-description">Bozburun marinanın hemen üzerinde otel konforuyla döşenmiş bu evimiz, binamızın ikinci katında bulunur. Yatak odasında bir adet 160X200 çift kişilik yatak, salonun da bir adet açılır yatak olabilir kanepesi vardır. Amerikan mutfaklı, geniş balkonlu, deniz manzaralı, ferah döşenmiş bir evdir.</p>
+                        <button class="room-booking-btn">Rezervasyon Yap</button>
+                    </div>
+                </div>
+
+                <!-- Room 3 - ROCK -->
+                <div class="room-card" onclick="openRoomModal('rock')">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="ROCK Suite">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">ROCK</h3>
+                        <p class="room-description">Bu evimiz, binamızın birinci katında bulunur. Yatak odasında bir adet 160X200 çift kişilik yatak, salonun da bir adet açılır yatak olabilir kanepesi vardır. Amerikan mutfaklı, geniş balkonlu, deniz manzaralı, ferah döşenmiş bir evdir.</p>
+                        <button class="room-booking-btn">Rezervasyon Yap</button>
+                    </div>
+                </div>
+
+                <!-- Room 4 - YOU -->
+                <div class="room-card" onclick="openRoomModal('you')">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="YOU Suite">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">YOU</h3>
+                        <p class="room-description">Bu evimiz, binamızın birinci katında bulunur. Yatak odasında bir adet 160X200 çift kişilik yatak, salonun da bir adet açılır yatak olabilir kanepesi vardır. Amerikan mutfaklı, geniş balkonlu, deniz manzaralı, ferah döşenmiş bir evdir.</p>
+                        <button class="room-booking-btn">Rezervasyon Yap</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri</h2>
+            <div class="gallery-container">
+                <div class="gallery-row">
+                    <div class="gallery-track gallery-track-left">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="WE Room">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="WILL Room">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="ROCK Room">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="YOU Room">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Marina View">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-track gallery-track-right">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Bozburun View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Marina View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Balcony View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Restaurant View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Food View">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Four Holiday Suites</h3>
+                    <p>Bozburun'da unutulmaz tatil deneyimi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-phone"></i> +90 544 124 48 44</p>
+                    <p><i class="fas fa-envelope"></i> fouryourholiday@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Four Holiday Suites. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Room Modal -->
+    <div id="roomModal" class="room-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Oda Galerisi</h2>
+            </div>
+            <div class="modal-gallery" id="modalGallery">
+                <!-- Modal gallery content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
